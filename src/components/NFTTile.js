@@ -6,7 +6,7 @@ import {
 
 function NFTTile (data) {
     const newTo = {
-        pathname:"/nftPage/"+data.data.tokenId
+        pathname: data.pathname + `${data.data.contract}/${data.data.tokenId}`
     }
     return (
         <Link to={newTo}>
